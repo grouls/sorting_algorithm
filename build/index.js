@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Collections_1 = require("./Collections");
+const numbersCollection = new Collections_1.NumbersCollection([10, -3, 7, 4]);
+const charactersCollection = new Collections_1.CharactersCollection('racecar');
+const linkedList = new Collections_1.LinkedList();
+linkedList.add(300);
+linkedList.add(-1);
+linkedList.add(-90);
+linkedList.add(10);
+numbersCollection.sort();
+console.log('🚀 ~ file: index.ts ~ line 14 ~ sorter', numbersCollection.data);
+charactersCollection.sort();
+console.log('🚀 ~ file: index.ts ~ line 16 ~ charactersCollection', charactersCollection.data);
+linkedList.sort();
+linkedList.print();

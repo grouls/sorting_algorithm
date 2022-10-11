@@ -1,4 +1,14 @@
 "use strict";
-const logSomething = () => {
-    console.log('hello world!');
-};
+Object.defineProperty(exports, "__esModule", { value: true });
+const Collections_1 = require("./Collections");
+const Sorter_1 = require("./Sorter");
+const numbersCollection = new Collections_1.NumbersCollection([10, -3, 7, 4]);
+const charactersCollection = new Collections_1.CharactersCollection('racecar');
+const sortArray = new Sorter_1.Sorter(numbersCollection);
+const sortChars = new Sorter_1.Sorter(charactersCollection);
+console.log('🚀 ~ file: index.ts ~ line 11 ~ sorter', numbersCollection.data);
+sortArray.sort();
+console.log('🚀 ~ file: index.ts ~ line 13 ~ sorter', numbersCollection.data);
+console.log('🚀 ~ file: index.ts ~ line 15 ~ charactersCollection', charactersCollection.data);
+sortChars.sort();
+console.log('🚀 ~ file: index.ts ~ line 17 ~ charactersCollection', charactersCollection.data);

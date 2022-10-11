@@ -1,0 +1,26 @@
+{
+  "name": "sorting_algorithm",
+  "version": "1.0.0",
+  "description": "Content based off of: **Typescript: The Complete Developers Guide by Stephen Grider**",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grouls/sorting_algorithm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grouls/sorting_algorithm/issues"
+  },
+  "homepage": "https://github.com/grouls/sorting_algorithm#readme",
+  "dependencies": {
+    "concurrently": "^7.4.0",
+    "nodemon": "^2.0.20"
+  }
+}
